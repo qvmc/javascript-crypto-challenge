@@ -20,7 +20,7 @@
     "jest": "^24.8.0"
   },
   "dependencies": {
-    "libsodium-wrappers": "^0.7.4"
+    "libsodium-wrappers": "^0.7.5"
   },
   "engines": {
     "node": ">=10.16.0"
