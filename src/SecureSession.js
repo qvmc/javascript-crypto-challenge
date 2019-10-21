@@ -40,8 +40,10 @@ module.exports = {
 
     encrypt: async function(msg)
     {
+        await nacl.ready;
         let nonce = nacl.randombytes_buf(nacl.crypto_secretbox_NONCEBYTES);
         let ciphertext = nacl.crypto_secretbox_easy(msg, nonce, tx);
+
         return {ciphertext, nonce};
     }
 };
